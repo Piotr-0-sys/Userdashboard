@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,13 +22,19 @@ body {
   
   nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 10px;
+    padding: 10px 20px;
     display: flex;
     text-align: center;
     font: 1em full width;
     vertical-align: sub;
     line-height: 60px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-size: x-large;
   }
   
   nav li {
@@ -39,3 +54,99 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
   }
+  div h2 {
+    text-align: left;
+  }
+  div p{
+    text-align: left;
+  }
+
+  .nav-link:hover {
+    color: #007bff;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black;
+}
+
+.navbar-expand-sm{
+  display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8 );
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    width: 100%;
+}
+.logo-img {
+  width: 150px; 
+    height: auto;
+    margin-bottom: -10px;
+}
+.logo:hover{
+  scale: 1.01;
+
+}
+.logo-img {
+  width: 150px; 
+  height: auto;
+  margin-bottom: -10px;
+}
+.out{
+  left: 0%;
+  margin-left: 100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button to trigger the dropdown */
+.dropdown button {
+  background-color: #008a9c;
+  color: white;
+  padding-bottom: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80px;
+  height: 50px;
+  margin-left: 1100px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the button's background color on hover */
+.dropdown:hover button {
+  background-color: #008a9c;
+}
